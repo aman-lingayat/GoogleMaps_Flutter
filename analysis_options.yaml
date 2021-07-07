@@ -1,0 +1,13 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  errors:
+    missing_required_param: error
+    missing_return: error
+
+  exclude:
+    - '**/*.gr.dart'
+    - '**/*.g.dart'
+    - '**/*.freezed.dart'
+    - 'firebase_backend/'
+    - 'lib/repositories/utils/not_in_use'
